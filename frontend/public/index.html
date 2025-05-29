@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes App</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <div  class="max-w-xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6">📝 Notes App</h1>
+
+    <!-- Form -->
+    <form id="note-form" class="space-y-4 mb-8">
+      <input type="text" id="title" placeholder="Title"
+        class="w-full p-2 border border-gray-300 rounded" required />
+      <textarea id="content" placeholder="Content"
+        class="w-full p-2 border border-gray-300 rounded" required></textarea>
+      <button type="submit"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
+        Add Note
+      </button>
+      <button type="button" id="cancel-edit" class="bg-gray-500 text-white px-4 py-2 rounded hidden">
+  Cancel
+</button>
+    </form>
+
+
+
+    <!-- Notes List -->
+    <div id="notes" class="space-y-4"></div>
+  </div>
+
+ <script src="script.js"></script> 
+</body>
+</html>
